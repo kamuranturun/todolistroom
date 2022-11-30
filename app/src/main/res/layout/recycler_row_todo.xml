@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ıd"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:id="@+id/todo_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="29dp"
+        app:layout_constraintStart_toEndOf="@id/tv_ıd"
+        app:layout_constraintEnd_toStartOf="@id/todo_edit_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/todo_edit_btn"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:onClick="todoeditbtn"
+        android:layout_marginRight="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/todo_delete_btn"
+        app:layout_constraintStart_toEndOf="@id/todo_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+    <ImageView
+        android:id="@+id/todo_delete_btn"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:onClick="tododeletebtn"
+        android:layout_marginRight="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/todo_edit_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
